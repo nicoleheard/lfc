@@ -1,0 +1,27 @@
+@charset "utf-8";
+#error404 h3 {
+	padding-top: 10%;
+}
+#error404 .content {
+	width: 90%;
+}
+#error404 .content, #error404 .container .one {
+	padding-bottom: 10%;
+}
+.sitemap {
+	text-align: left;
+	padding-top: 50px;
+	float: left;
+}
+#error404 ul li {
+	padding: 5px;
+} 
+#error404 ul {
+	margin-bottom: 20px;
+}
+#error404 .one-half {
+	text-align: left
+	;padding-top: 50px; 
+	float: left;
+}
+

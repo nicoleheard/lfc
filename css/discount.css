@@ -1,0 +1,38 @@
+@charset "utf-8";
+#discount .one {
+	background-color: #4e1944;
+	margin-bottom: 50px;
+}
+#discount .container .content {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding-bottom: 50px;
+	overflow: hidden;
+} 
+#discount .one-half {
+	overflow: hidden;
+	text-align: center;
+	float: left;
+	text-align: center;
+}
+#discount .one-half h6{
+	padding: 50px 20px;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 75%;
+	border: 3px #4e424c dashed;
+}
+#discount .one-half#free h6{
+	background: #6eae54;
+	color: #4e1944;
+}
+#discount .one-half#off h6{
+	background: #4e1944;
+	color: white;
+}
+#discount .content p {
+	width: 90%;
+	margin: auto;
+	text-align: justify;
+}

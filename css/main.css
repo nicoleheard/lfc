@@ -1,0 +1,788 @@
+@charset "utf-8";
+/***********************************************
+0. Meyer CSS Reset
+1. Universal Styles (typography, etc.)
+2. Header Styles
+3. Banner & Home Styles
+4. About Styles
+5. Services Styles
+6. FAQs Styles
+7. Testimonials Styles
+8. Contact Styles
+9. Footer Styles
+10. Forms
+11. Media Queries
+***********************************************/
+
+/*************************
+**************************
+0. Meyer CSS Reset
+**************************
+*************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************
+**************************
+1. Universal Styles
+**************************
+*************************/
+h1, h2, h3, h4, h5, h6, p, li {
+	font-family: Open Sans, Sans Serif;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #4e424c;
+}
+h1 {
+	font-weight: 800;
+}
+h2, h3, h5 {
+	font-weight: 700;
+}
+h4, h6 {
+	font-weight: 600;
+}
+h5 {
+	font-style: italic;
+}
+h2 {
+	font-size: 82px;
+	line-height: 100px;
+}
+h1 {
+	font-size: 60px;
+	line-height: 70px;
+}
+h4, h5, h3{
+	font-size: 30px;
+	line-height: 40px;
+}
+h6 {
+	font-size: 24px;
+	line-height: 30px;
+}
+p {
+	font-size: 20px;
+	line-height: 24px;
+}
+li {
+	font-size: 16px;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: #4e424c;
+}
+.extrabold {
+	font-weight: 800;
+}
+.semibold {
+	font-weight: 600;
+}
+.bold {
+	font-weight: 700;	
+}
+.italic {
+	font-style: italic;
+}
+.green {
+	color: #6eae54;
+}
+.grey {
+	color: #4e424c;
+}
+.light-grey {
+	color: #f7f7f7;
+}
+.purple {
+	color: #4e1944;
+}
+.red {
+	color: red;
+}
+.thirtysix {
+	font-size: 36px;
+	line-hight: 40px;
+}
+.sixteen {
+	font-size: 16px;
+	line-height: 20px;
+}
+.twelve {
+	font-size: 12px;
+	line-height: 20px;
+}
+.quote {
+	vertical-align:top;
+}
+.panel {
+	width: 100%;
+	overflow: hidden;
+}
+.panel .container {
+	overflow: hidden;
+	margin: 0 auto;
+}
+.panel.one .container {
+	width: 1000px;
+}
+.panel.two .container {
+	width: 100%;
+}
+.container .one:first-child {
+	text-align: center;
+}
+.container h1{
+	border: 10px solid;
+	display: inline-block;
+	padding: 5px 10px;
+}
+.panel.one h1 {
+	border-color: #4e424c ;
+	margin: 20px 0;
+}
+.panel.two h1 {
+	border-color: #f7f7f7;
+	color: #f7f7f7;
+	margin: 10px 0;
+}
+.one {
+	width: 100%;
+	overflow: hidden;
+}
+.one-half {
+	width: 50%;
+	overflow: hidden;
+}
+.one-third {
+	width: 33%;
+	overflow: hidden;
+}
+.two-third {
+	width: 67%;
+	overflow: hidden;
+}
+.one-fourth {
+	width: 25%;
+	overflow: hidden;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+
+/*************************
+**************************
+2. Header Styles
+**************************
+*************************/
+#header {
+	background-color: white;
+	z-index: 5;
+}
+#header.stuck {
+	position: fixed;
+	top: 0;
+	box-shadow: 0 2px 4px rgba(0,0,0, .2);
+}
+#header .left .wrapper{
+	margin: 5px 0 5px 25px;
+}
+#header .left img {
+	height: 75px;
+}
+#header .left img#mobile-logo, #mobile-nav {
+	display: none;
+}
+#header .right .wrapper {
+	text-align: right;
+	margin: 5px 25px 5px 0;
+	overflow: hidden;
+}
+#header #mobile-menu{
+	display: none;
+	margin-top: 40px;
+}
+#header .right h5 {
+	margin-top: 15px;
+}
+#header ul li {
+	display: inline-block;
+	padding-right: 10px;
+}
+.main-menu-item:hover, .main-menu-item.active {
+	color: #6eae54;
+}
+
+
+/*************************
+**************************
+3. Banner & Home Styles
+**************************
+*************************/
+#banner {
+	height: 100;
+	background-image: url(../images/banner.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+#banner .container {
+	height: 100%;
+	width: 100%;
+}
+#banner .two-third {
+	height: 100%;
+	display:table;
+}
+#banner .content {
+	width: 100%;
+	margin: auto;
+	display: table-cell;
+   text-align: left;
+   vertical-align: middle;
+}
+#banner .container h2 {
+	padding-left: 25px;
+}
+#home {
+	position: relative;
+	background-image: url(../images/tools1.png);
+	background-position:bottom;
+	background-size: auto 250px;
+	background-repeat:repeat-x;
+}
+#home .section {
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	margin: 40px 10px;
+}
+#home .one{
+	text-align:center;
+}
+#home .one-third img{
+	height: 100px;
+	padding-bottom: 20px;
+}
+#home .one-third{
+	text-align:center;
+}
+#home p, #home h6 {
+	padding-right: 10px;
+	padding-right: 10px;
+}
+
+
+/*************************
+**************************
+4. About Styles
+**************************
+*************************/
+#about .content {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/*************************
+**************************
+5. Services Styles
+**************************
+*************************/
+#services {
+	position: relative;
+}
+#services .one {
+	background-color: #4e1944;
+}
+#services .one p {
+	display: none;
+}
+#services nav {
+	background-color: #f7f7f7;
+}
+#services nav ul li {
+	padding: 15px 20px;
+	border-bottom: solid 1px white;
+}
+#services nav ul li:hover, #services nav ul li.active{
+	background-color: #6eae54;
+	cursor: pointer;
+}
+#services nav ul li:hover p, #services nav ul li.active p{;
+	color: #f7f7f7;
+}
+#services .content {
+	overflow: hidden;
+}
+#services .tab-content {
+	width: 100%;
+	display: none;
+	overflow: hidden;
+}
+#services .tab-content.active {
+	display: block;
+}
+#services .tab-content .content{
+	width: 95%;
+	overflow: hidden;
+	padding: 20px 0px;
+	margin: auto;
+}
+
+/*************************
+**************************
+6. FAQs Styles
+**************************
+*************************/
+#faqs {
+	position: relative;
+	background-image: url(../images/tools2.png);
+	background-position:bottom;
+	background-size: auto 250px;
+	background-repeat:repeat-x;
+	background-color: #4e1944; 
+}
+#faqs .one.content {
+	overflow: hidden;
+	margin-bottom: 50px;	
+}
+#faqs h1, #faqs p {
+	color: white;
+}
+#faqs h1 {
+	border-color: white;
+}
+#faqs h6 {
+	margin: 30px 20px 0;
+	text-align: left;
+	padding-bottom: 5px;
+}
+#faqs p {
+	margin: 0 20px;
+	text-align: left;
+	font-weight: 300;
+}
+#faqs p .semibold {
+	font-weight: 400;
+}
+#faqs .one-half div {
+	width: 95%;
+}
+
+/*************************
+**************************
+7. Testimonials Styles
+**************************
+*************************/
+#testimonials{
+	background-image:url(../images/testimonials.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	position: relative;
+}
+#testimonials h1, #testimonials h5, #testimonials p {
+	color: white;
+	text-align: center;
+}
+#testimonials h1 {
+	border-color: white;
+}
+#testimonials .container {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+#testimonials .slide-content {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+#testimonials .slide-content.active {
+	overflow: hidden;
+}
+#testimonials .one.content {
+	overflow: hidden;
+	clear: both;
+}
+#testimonials-two {
+	overflow: hidden;
+}
+#testimonials-two ul {
+	display: block;
+}
+#testimonials .quote {
+	margin-right: 10px;
+}
+#testimonials .arrows {
+	width: 100%;
+	bottom: 10px;
+	margin: auto;
+	text-align: center;
+}
+#testimonials .arrows img {
+	margin: 20px;
+	border-radius: 50%;
+}
+#testimonials img#left-arrow:hover {
+	cursor: pointer;
+	background-image:url(../images/leftarrow.png);
+}
+#testimonials img#right-arrow:hover {
+	cursor: pointer;
+	background-image:url(../images/rightarrow.png);
+}
+#testimonials .slide-content {
+	display: inline-block;
+	float: left;
+	margin-bottom: 20px;
+}
+#testimonials .one {
+	overflow: hidden;
+}
+#testimonials .content {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+   text-align: center;
+   vertical-align:middle;
+}
+
+/*************************
+**************************
+8. Contact Styles
+**************************
+*************************/
+#contact .one {
+	background-color: #4e1944;
+}
+#contact .left {
+	padding: 25px 0 25px 50px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box
+}
+#contact .right {
+	background-color: #f2f0f0;
+	overflow: hidden;;
+}
+#contact .right h4 {
+	color:  #4e424c;
+	margin: 25px;
+}
+#contact .right p {
+	margin-left: 25px;
+}
+#contact form {
+	margin: 25px 0 50px 25px;
+}
+
+/*************************
+**************************
+9. Footer Styles
+**************************
+*************************/
+#footer {
+	background-color: #4e1944;;
+}
+#footer .container {
+	width: 90%;
+}
+#footer li, #footer p {
+	color: #f7f7f7; 
+	position: relative;
+	vertical-align: center;
+	
+}
+#footer ul li {
+	display: inline-block;
+	padding: 2px;
+}
+#footer #copyright p {
+	text-align: left;
+}
+#footer #footer-menu ul {
+	text-align: center;
+}
+#footer #footer-menu, #footer #copyright {
+	padding: 15px 0;
+}
+#footer #social {
+	text-align: right;
+	margin: 4px 0;
+}
+#footer a {
+	color: white;
+}
+
+/*************************
+**************************
+10. Form Styles
+**************************
+*************************/
+form input, form textarea {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;
+
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	color: #4e424c;
+	width: 95%;
+	padding: 10px;
+	background-color: white;
+	border: none;
+	margin: 5px;
+}
+form input value {
+	padding; 20px;
+}
+form textarea {
+	resize: none;
+	height: 200px;
+}
+form input[type=submit] {
+	background-color: #6eae54;
+	color: white;
+	border-radius: 4px;
+}
+
+/*************************
+**************************
+11. Loader Styles
+**************************
+*************************/
+#loader {
+	width: 100%;
+	height: 100%;
+	background: white;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+}
+
+
+/*************************
+**************************
+12. Media Queries
+**************************
+*************************/
+@media only screen and (max-width: 1000px) {
+	#services .one-third{
+		width: 40%;
+	}
+	#services .two-third {
+		width: 60%;
+	}
+	.panel.one .container {
+		width: 95%;
+	}
+	#header .right{
+		display: none;
+	}
+	#header #mobile-menu {
+		display: inline;
+	}
+	#header #mobile-menu #menu-trigger{
+		cursor: pointer;	
+	}
+	#mobile-nav {
+		display: none;
+		width: 100%;
+		top: 85px;
+		bottom:0;
+		position:fixed;
+		overflow-y:scroll;
+		overflow-x:hidden;
+		z-index: 1000;
+	}
+	#mobile-nav li {
+		width: 100%;
+		border-top: white solid 1px;
+		text-align: center;
+		background-color: #f7f7f7;
+	}
+	#mobile-nav li a {
+		display: block;
+		padding: 15px;
+	}
+	#mobile-nav li a:hover, #header #mobile-nav li a:active {
+		background-color: #6eae54;
+		color: white;
+	}
+	#mobile-nav.nav-expanded {
+		display: block;		
+	}
+	#banner .two-third {
+		width: 100%;
+	}
+	#banner h2 {
+		font-size: 60px;
+		line-height: 80px;
+	}
+	#testimonials .arrows {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.one-third, .two-third, #faqs .one-half, #contact .one-half, #footer .left, #services .one-third, #services .two-third, #discount .one-half,
+	#error404 .one-half, #sitemap .one-half{
+		width: 100%;
+	}
+	#home .section{		
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+	#home #affordable .section{	
+		margin-bottom: 40px;
+	}
+	#faqs .one-half div {
+		float: none;
+		margin: auto;
+	}
+	#services-nav {
+		display: none;
+		width: 100%;
+	}
+	#services-nav.nav-expanded {
+		display: block;!important		
+	}
+	#services .one p {
+		display: block;
+		font-style:normal;
+		color: #f7f7f7;
+		margin: -10px 0 10px;
+	}
+	#services .content {
+		text-align: center;
+	}
+	.service-bg {
+		width: 100%;
+	}
+	#testimonials{
+	background-image:url(../images/testimonials.jpg);
+	background-attachment:scroll;
+	}
+	#footer #copyright p, #footer #social, #contact .one-half{
+		text-align: center;!important
+	}
+	#footer #footer-menu, #footer #copyright {
+		padding:5px 0;
+	}
+	#contact .left{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	#contact form {
+		margin: 25px auto;
+	}
+}
+@media only screen and (max-width: 650px) {
+	#header .left {
+		width: 66.6%;
+	}
+	#header #mobile-menu {
+		width: 33.3%;
+	}
+	#banner h2 {
+		font-size: 48px;
+		line-height: 70px;
+	}
+	h1 {
+		font-size: 54px;
+		line-height: 75px;
+	}
+	h3 {
+		font-size: 34px;
+		line-height: 45px;
+	}
+	h5 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#header .left {
+		width: 50%;
+	}
+	#header .left img#logo {
+		display: none;
+	}
+	#header .left img#mobile-logo {
+		display: block;
+	}
+	#header #mobile-menu {
+		width: 50%;
+	}
+	#banner h2 {
+		font-size: 36px;
+		line-height: 55px;
+	}
+	h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	#testimonials h1 {
+		font-size: 30px;
+	}
+	h5 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
