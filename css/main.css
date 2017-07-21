@@ -28,8 +28,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -44,7 +44,7 @@ html, body {
 	height: 100%;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -127,7 +127,7 @@ a {
 	font-weight: 600;
 }
 .bold {
-	font-weight: 700;	
+	font-weight: 700;
 }
 .italic {
 	font-style: italic;
@@ -349,6 +349,21 @@ a {
 #services .one p {
 	display: none;
 }
+#services #more-services {
+	cursor: pointer;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 #services nav {
 	background-color: #f7f7f7;
 }
@@ -381,6 +396,20 @@ a {
 	margin: auto;
 }
 
+#services p {
+	margin-top: 10px;
+}
+
+#services .thumbnails {
+	width: 95%;
+	margin: 0 5% 5% 0;
+	overflow: hidden;
+}
+
+.service-bg {
+	width: 100%;
+}
+
 /*************************
 **************************
 6. FAQs Styles
@@ -392,11 +421,11 @@ a {
 	background-position:bottom;
 	background-size: auto 250px;
 	background-repeat:repeat-x;
-	background-color: #4e1944; 
+	background-color: #4e1944;
 }
 #faqs .one.content {
 	overflow: hidden;
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
 }
 #faqs h1, #faqs p {
 	color: white;
@@ -441,6 +470,9 @@ a {
 }
 #testimonials h1 {
 	border-color: white;
+}
+#testimonials h5 {
+	text-transform: uppercase;
 }
 #testimonials .container {
 	overflow: hidden;
@@ -512,8 +544,8 @@ a {
 }
 #contact .left {
 	padding: 25px 0 25px 50px;
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box
 }
 #contact .right {
@@ -543,10 +575,10 @@ a {
 	width: 90%;
 }
 #footer li, #footer p {
-	color: #f7f7f7; 
+	color: #f7f7f7;
 	position: relative;
 	vertical-align: center;
-	
+
 }
 #footer ul li {
 	display: inline-block;
@@ -575,8 +607,8 @@ a {
 **************************
 *************************/
 form input, form textarea {
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
 	font-family: 'Roboto Condensed', sans-serif;
@@ -609,7 +641,11 @@ form input[type=submit] {
 #loader {
 	width: 100%;
 	height: 100%;
-	background: white;
+	background-image: url("../images/loading.gif");
+	background-size: 150px;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
 	position: fixed;
 	z-index: 10;
 	top: 0;
@@ -638,7 +674,7 @@ form input[type=submit] {
 		display: inline;
 	}
 	#header #mobile-menu #menu-trigger{
-		cursor: pointer;	
+		cursor: pointer;
 	}
 	#mobile-nav {
 		display: none;
@@ -665,7 +701,7 @@ form input[type=submit] {
 		color: white;
 	}
 	#mobile-nav.nav-expanded {
-		display: block;		
+		display: block;
 	}
 	#banner .two-third {
 		width: 100%;
@@ -684,11 +720,11 @@ form input[type=submit] {
 	#error404 .one-half, #sitemap .one-half{
 		width: 100%;
 	}
-	#home .section{		
+	#home .section{
 		margin-top: 40px;
 		margin-bottom: 0px;
 	}
-	#home #affordable .section{	
+	#home #affordable .section{
 		margin-bottom: 40px;
 	}
 	#faqs .one-half div {
@@ -700,7 +736,7 @@ form input[type=submit] {
 		width: 100%;
 	}
 	#services-nav.nav-expanded {
-		display: block;!important		
+		display: block;!important
 	}
 	#services .one p {
 		display: block;
@@ -710,9 +746,6 @@ form input[type=submit] {
 	}
 	#services .content {
 		text-align: center;
-	}
-	.service-bg {
-		width: 100%;
 	}
 	#testimonials{
 	background-image:url(../images/testimonials.jpg);
@@ -728,7 +761,7 @@ form input[type=submit] {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	
+
 	#contact form {
 		margin: 25px auto;
 	}
@@ -755,6 +788,9 @@ form input[type=submit] {
 	h5 {
 		font-size: 25px;
 		line-height: 35px;
+	}
+	#services .thumbnail {
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 500px) {

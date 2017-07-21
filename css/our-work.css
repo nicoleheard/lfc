@@ -1,0 +1,50 @@
+.panel.one .container{
+  box-sizing: border-box;
+	width: 100%;
+  padding: 20px 4.5% 0 5%;
+}
+
+.panel.one .container h1 {
+  color: #4e1944;
+  border-color: #4e1944;
+}
+
+#after {
+  padding-bottom: 20px;
+}
+
+img {
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  padding-right:0.51%;
+  float: left;
+
+}
+
+img.small {
+  width: 33%;
+}
+
+img.medium {
+  width: 49.5%;
+}
+
+
+img.large {
+  width: 99%;
+}
+
+@media only screen and (max-width: 1000px) {
+  img.small {
+    width: 49.5%;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  img.medium, img.small {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
