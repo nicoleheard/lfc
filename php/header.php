@@ -2,8 +2,8 @@
         <div class="container">
             <div class="one-half left">
                 <div class="wrapper">
-                    <a href="/index.php"><img id="logo" alt="LFC Services Home Repair Division" src="images/logo.png" /></a>
-                     <a href="/index.php"><img id="mobile-logo" alt="LFC Services Home Repair Division" src="images/logo_mobile.png" /></a>
+                    <a href="/"><img id="logo" alt="LFC Services Home Repair Division" src="/images/logo.png" /></a>
+                     <a href="/"><img id="mobile-logo" alt="LFC Services Home Repair Division" src="/images/logo_mobile.png" /></a>
                 </div>
             </div>
             <div class="one-half right" id="mobile-menu">
@@ -13,7 +13,7 @@
                         <li id="menu-trigger" class="semibold">MENU</li>
                     </ul>
                 </div>
-            </div>  
+            </div>
             <div class="one-half right" id="menu">
                 <div class="wrapper">
                     <h5>240-882-6322</h5>
@@ -31,10 +31,10 @@
                     </nav>
                 </div>
             </div>
-            
+
         </div>
     </div>
-    
+
     <div class="panel 1">
         <div class="container">
     		<div class="one" id="mobile-nav">
