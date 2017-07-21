@@ -2,19 +2,19 @@ var maxSlideHeight, slideHeights = [];
 var currentSlide = 1;
 var loop, slider, width, animationSpeed, pause;
 
-jQuery(window).load(function(){
+jQuery(window).ready(function(){
 	$('.slide-content').each(function(i) {
 		slideHeights[i] = $(this).height();
 	});
 
 	maxSlideHeight = Math.max.apply(null, slideHeights);
-	
+
 	slider = $('#testimonials #testimonials-one #testimonials-two');
 	animationSpeed = 1000;
-	pause = 6000;
-	
+	pause = 20000;
+
 	$(window).trigger('resize');
-	
+
 	$('#testimonials #testimonials-two').on("swipeleft", goToNext);
 	$('#testimonials #testimonials-two').on("swiperight", goToPrev);
 });
@@ -60,11 +60,11 @@ function goToPrev() {
 	if(!($(slider).is(':animated'))) {
 		slider.animate({'margin-left':'+='+width}, animationSpeed, function() {currentSlide--; checkSlider(); })
 	}
-	
+
 	if(loop == null) {
 		startSlider();
-	}	
-	
+	}
+
 }
 
 function goToNext() {

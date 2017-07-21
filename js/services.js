@@ -1,16 +1,16 @@
 //Menu code for services
-jQuery(window).load(function(){
+jQuery(window).ready(function(){
 	$('#services-nav').css('min-height', $('#services-ul').height());
 	jQuery("#services-trigger").click(function(){
 		//slide up all the link lists
 		jQuery("#services-nav").slideToggle(400, function() {
-			jQuery(this).toggleClass("nav-expanded").css('display','');	
+			jQuery(this).toggleClass("nav-expanded").css('display','');
 		});
 	});
-	
+
 	$('.tab-header').click(function(evn){
 		$("#services-nav").slideToggle(400, function() {
-			jQuery(this).toggleClass("nav-expanded").css('display','');	
+			jQuery(this).toggleClass("nav-expanded").css('display','');
 		});
     });
 });
